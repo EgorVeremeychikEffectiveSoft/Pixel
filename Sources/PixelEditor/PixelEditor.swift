@@ -41,4 +41,10 @@ public typealias NonL10n = String
 
 let bundle = Bundle.init(for: Dummy.self)
 
+let podsBundle: Bundle {
+  let bundle = Bundle(for: Dummy.self)
+  return Bundle(url: bundle.url(forResource: "Dummy",
+                                withExtension: "bundle")!)!
+}()
+
 final class Dummy {}
