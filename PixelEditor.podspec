@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   s.ios.frameworks = ['UIKit', 'CoreImage']
 
   s.resource_bundles = {
-    'Dummy' => ['Sources/PixelEditor/Media.xcassets']
+    'Dummy' => []
   }
   s.dependency 'PixelEngine', '~> 0.2.0'
 
